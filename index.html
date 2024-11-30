@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <title>Сувениры</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/logo.png">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+
+
+    <body>
+
+        <header class="header-container">
+            <div class="header" id="header">
+                <div class="header-text-div">
+                    <a href="#" class="header-text">Компания по изготовлению сувениров<br><b class="header-text title">«Иггдрасиль»</b></a>
+                </div>    
+                <div class="navbar">
+                    <a href="#">Главная</a>
+                    <a href="#containers">Категории товаров</a>
+                    <a href="#order">Сделать заказ</a>
+                    <a href="#addresses" class="right">Адреса магазинов</a>
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+            <div class="block-welcoming">
+                <p class="block-text welcoming">Компания "Иггдрасиль" занимается изготовлением сувениров из качественных пород натуральной древесины.
+                </p>
+
+            </div>
+            
+            <div class="block-space" id="containers"></div>
+
+            <div class="block categories-container">
+                <p class="block-text categories">Категории наших изделий</p>
+                <div class="categories-section left arrive-on-left_opacity">
+                    <a href="#pop-up-1" class="categories-block btn left block-1">Статуэтки и фигурки</a>
+                    <a href="#pop-up-3" class="categories-block btn left block-2">Талисманы, значки, руны</a>
+                    <a href="#pop-up-5" class="categories-block btn left block-3">Рамки и панно</a>
+                    <a href="#pop-up-7" class="categories-block btn left block-4">Деревянные инструменты</a>
+                </div>
+                <div class="categories-section right arrive-on-right_opacity">
+                    <a href="#pop-up-2" class="categories-block btn right block-5">Столовые приборы</a>
+                    <a href="#pop-up-4" class="categories-block btn right block-6">Тарелки и кружки</a>
+                    <a href="#pop-up-6" class="categories-block btn right block-7">Разделочные доски и подносы</a>
+                    <a href="#pop-up-8" class="categories-block btn right block-8">Чайники, вазы и кувшины</a>
+                </div>
+            </div>
+
+
+            <div class="block-space" id="order"></div>
+
+            <div class="block order-container">
+                <p class="block-text categories">Изделие по вашему заказу</p>
+                <div class="order wrapper order_opacity">
+                    <form action="#form-pop-up" id="form" class="order form">
+
+                        <h3 class="order title">Заполните форму</h3>
+
+                        <label class="order label">Ваше имя</label>
+                        <input required type="text" class="order input">
+
+                        <label class="order label">Электронная почта</label>
+                        <input required type="text" class="order input"  placeholder="address@example.com">
+
+                        <label class="order label">Номер телефона</label>
+                        <input required type="number" class="order input"  placeholder="8-(000)-000-00-00">
+
+                        <label class="order label">Материал</label>
+                        <select class="order input select"> 
+                            <option class="order-select-option" value="Ясень">Ясень</option>
+                            <option class="order-select-option" value="Дуб">Дуб</option>
+                            <option class="order-select-option" value="Бук">Бук</option>
+                            <option class="order-select-option" value="Сосна">Сосна</option>
+                            <option class="order-select-option" value="Берёза">Берёза</option>
+                            <option class="order-select-option" value="Осина">Осина</option>
+                            <option class="order-select-option" value="Клён">Клён</option>
+                            <option class="order-select-option" value="Орех">Орех</option>
+                            <option class="order-select-option" value="Лиственница">Лиственница</option>
+                            <option class="order-select-option" value="Можжевельник">Можжевельник</option>
+                        </select>
+
+                     
+                        <label class="order label">Опишите желаемое изделие</label>
+                        <textarea required class="order input  description"></textarea>
+
+                        <input type="submit" class="order btn" value="Отправить">
+                        
+
+
+                    </form>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="block-space" id="addresses"></div>
+
+            <div class="block addresses-container">
+                <p class="block-text categories">Адреса наших магазинов</p>
+                <div class="categories-block addresses arrive-on-left_opacity_2">
+                    Магазин №1 - г. Ставрополь, ул. Тухачевского, д. 8/1, 2 этаж
+                </div>
+                <div class="categories-block addresses arrive-on-left_opacity_3">
+                    Магазин №2 - г. Ставрополь, ул. Мира, д. 27б, 1 этаж</div>
+
+            </div>
+
+        </main>
+
+
+
+
+        <div class="pop-up-screen form" id="form-pop-up">
+            <a href="#pop-up-closer" class="pop-up-screen link form"></a>
+            <div class="pop-up-container form">
+
+                <a href="#pop-up-closer" class="pop-up-closer-btn-form">×</a>
+
+                <div class="form-pop-up-text">
+                    <p class="form-p title">Ваш запрос отправлен!</p>
+                    <p class="form-p">Скоро с Вами свяжется наш сотрудник.</p>
+                </div>
+
+            </div>    
+        </div>    
+
+
+        <div id="pop-up-closer" class="pop-up-closer"></div>
+
+        <div class="pop-up-screen" id="pop-up-1">
+            <a href="#pop-up-closer" class="pop-up-screen link"></a>
+            <div class="pop-up-container">
+                <div class="pop-up-closer-btn-container">
+                    <a href="#pop-up-closer" class="pop-up-closer-btn">×</a>
+                </div>
+                <div class="pop-up-text">
+                    <h3>В нашем ассортименте:</h3>
+                    <ul>
+                        <li>Статуэтки божеств славянской, скандинавской, греческой, индийской и египетской мифологии.</li>
+                        <li>Статуэтки и бюсты известных исторических личностей.</li>
+                        <li class="li-last">Фигурки животных.</li>
+                    </ul>    
+                </div>
+                <div class=pop-up-image-section>
+                    <div class=pop-up-image>
+                        <img src="img/Pop-up-1.jpg">
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="pop-up-screen" id="pop-up-2">
+            <a href="#pop-up-closer" class="pop-up-screen link"></a>
+            <div class="pop-up-container">
+                <div class="pop-up-closer-btn-container">
+                    <a href="#pop-up-closer" class="pop-up-closer-btn">×</a>
+                </div>
+                <div class="pop-up-text">
+                    <h3>В нашем ассортименте:</h3>
+                    <ul>
+                        <li>Столовые ложки, вилки и ножички.</li>
+                        <li>Кухонные лопатки.</li>
+                        <li>Палочки для суши.</li>
+                        <li>Мешалки для кофе.</li>
+                        <li class="li-last">Венчики</li>
+                    </ul>    
+                </div>
+                <div class=pop-up-image-section>
+                    <div class=pop-up-image>
+                        <img src="img/Pop-up-2.jpg">
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="pop-up-screen" id="pop-up-3">
+            <a href="#pop-up-closer" class="pop-up-screen link"></a>
+            <div class="pop-up-container">
+                <div class="pop-up-closer-btn-container">
+                    <a href="#pop-up-closer" class="pop-up-closer-btn">×</a>
+                </div>
+                <div class="pop-up-text">
+                    <h3>В нашем ассортименте:</h3>
+                    <ul>
+                        <li>Таласманы на шею.</li>
+                        <li>Комнатные обереги.</li>
+                        <li>Значки с узорами.</li>
+                        <li class="li-last">Скандинавские руны.</li>
+                    </ul>    
+                </div>
+                <div class=pop-up-image-section>
+                    <div class=pop-up-image>
+                        <img src="img/Pop-up-3.jpg">
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+        <div class="pop-up-screen" id="pop-up-4">
+            <a href="#pop-up-closer" class="pop-up-screen link"></a>
+            <div class="pop-up-container">
+                <div class="pop-up-closer-btn-container">
+                    <a href="#pop-up-closer" class="pop-up-closer-btn">×</a>
+                </div>
+                <div class="pop-up-text">
+                    <h3>В нашем ассортименте:</h3>
+                    <ul>
+                        <li>Глубокие тарелки для супа.</li>
+                        <li>Салатницы.</li>
+                        <li>Плоские тарелки.</li>
+                        <li class="li-last">Кружки для чая, пива и кваса.</li>
+                    </ul>    
+                </div>
+                <div class=pop-up-image-section>
+                    <div class=pop-up-image>
+                        <img src="img/Pop-up-4.jpg">
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="pop-up-screen" id="pop-up-5">
+            <a href="#pop-up-closer" class="pop-up-screen link"></a>
+            <div class="pop-up-container">
+                <div class="pop-up-closer-btn-container">
+                    <a href="#pop-up-closer" class="pop-up-closer-btn">×</a>
+                </div>
+                <div class="pop-up-text">
+                    <h3>В нашем ассортименте:</h3>
+                    <ul>
+                        <li>Рамки для картин и фотографий различных размеров.</li>
+                        <li>Прямоугольное и круглые настенное панно.</li>
+                        <li class="li-last">Фигурное панно.</li>
+                    </ul>    
+                </div>
+                <div class=pop-up-image-section>
+                    <div class=pop-up-image>
+                        <img src="img/Pop-up-5.jpg">
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="pop-up-screen" id="pop-up-6">
+            <a href="#pop-up-closer" class="pop-up-screen link"></a>
+            <div class="pop-up-container">
+                <div class="pop-up-closer-btn-container">
+                    <a href="#pop-up-closer" class="pop-up-closer-btn">×</a>
+                </div>
+                <div class="pop-up-text">
+                    <h3>В нашем ассортименте:</h3>
+                    <ul>
+                        <li>Разделочные доски для кухни.</li>
+                        <li>Подносы для посуды.</li>
+                        <li class="li-last">Подставки для чашек и чайников.</li>
+                    </ul>    
+                </div>
+                <div class=pop-up-image-section>
+                    <div class=pop-up-image>
+                        <img src="img/Pop-up-6.jpg">
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="pop-up-screen" id="pop-up-7">
+            <a href="#pop-up-closer" class="pop-up-screen link"></a>
+            <div class="pop-up-container">
+                <div class="pop-up-closer-btn-container">
+                    <a href="#pop-up-closer" class="pop-up-closer-btn">×</a>
+                </div>
+                <div class="pop-up-text">
+                    <h3>В нашем ассортименте:</h3>
+                    <ul>
+                        <li>Молотки и киянки для ремонтных, столярных и плотницких работ.</li>
+                        <li>Кухонные молоточки и скалки.</li>
+                        <li>Кии для бильярда.</li>
+                        <li>Ракетки для настольного тенниса (пинг-понга).</li>
+                        <li>Барабанные палочки.</li>
+                        <li class="li-last">Судейские молотки.</li>
+                    </ul>    
+                </div>
+                <div class=pop-up-image-section>
+                    <div class=pop-up-image>
+                        <img src="img/Pop-up-7.jpg">
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+        <div class="pop-up-screen" id="pop-up-8">
+            <a href="#pop-up-closer" class="pop-up-screen link"></a>
+            <div class="pop-up-container">
+                <div class="pop-up-closer-btn-container">
+                    <a href="#pop-up-closer" class="pop-up-closer-btn">×</a>
+                </div>
+                <div class="pop-up-text">
+                    <h3>В нашем ассортименте:</h3>
+                    <ul>
+                        <li>Чайники, обработанные для устойчивости к теплу.</li>
+                        <li>Вазы для цветов.</li>
+                        <li class="li-last">Кувшины.</li>
+                    </ul>    
+                </div>
+                <div class=pop-up-image-section>
+                    <div class=pop-up-image>
+                        <img src="img/Pop-up-8.jpg">
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+
+
+
+
+        <footer>
+            <div class="footer-section s1">
+                <a href="#" class="footer-title">Иггдрасиль</a>
+            </div>
+            <a href="#" class="footer-section s2">
+                <img class="footer-image" src="img/Yggdrasil.png">
+            </a>
+            <div class="footer-section s3">
+                <div class="footer-section s3 links">
+                    <p class="p2">Электронный адрес:<br>yggdrasil-souvenirs@gmail.com</p>
+                    <p class="p1">Телефон: 8 988 000 88 88</p>
+                </div>    
+            </div>  
+
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
