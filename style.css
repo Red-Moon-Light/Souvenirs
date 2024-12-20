@@ -765,6 +765,8 @@ main {
     visibility: hidden;
     opacity: 0;
     animation: 7s form-pop-up ease;
+    height: fit-content;
+    margin: auto;
 }
 
 .pop-up-screen.form:target {
