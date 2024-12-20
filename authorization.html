@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <title>Ассортимент</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="img/logo.png">
+        <link rel="stylesheet" href="style-authorization.css">
+
+    </head>
+
+
+
+    <body>
+
+        <header class="header-container shortened">
+            <div class="header" id="header">
+                <!-- <div class="header-text-div">
+                    <a href="index.html" class="header-text">Компания по изготовлению сувениров<br><b class="header-text title">«Иггдрасиль»</b></a>
+                </div> -->
+
+                <div class="navbar">
+                    <a href="index.html">Главная</a>
+                    <a href="index.html#containers">Категории товаров</a>
+                    <a href="index.html#order">Сделать заказ</a>
+                    <a href="index.html#addresses">Адреса магазинов</a>
+                </div>
+                <div class="authorization-link__container">
+                    <div class="authorization-link__bg-block">
+                        <a href="#" class="authorization-link" id="authorization__link">
+                            <img class="authorization-link__img" src="img/profile-icon.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <main>
+
+            <div class="block-space authorization" id="containers"></div>
+
+            <div>
+                
+                <article class="authorization-block__wrapper">
+                    <div class="authorization-block__shadow">
+                        <div class="authorization-block__padding">
+                            <div class="authorization-block__container ">
+
+                                <input checked id="tab-btn__user" class="authorization-block__input" name="tab-btn" type="radio">
+                                <label for="tab-btn__user" class="authorization-block__label">Пользователь</label>
+                                <input id="tab-btn__admin" class="authorization-block__input" name="tab-btn" type="radio">
+                                <label for="tab-btn__admin" class="authorization-block__label">Администратор</label>
+
+
+                                <div class="tab-content" id="tab-content__user">
+                                    <form action="" id="form-user-login">
+
+                                        <p class="authorization-form_title">Вход в аккаунт</p>
+
+                                        <label class="authorization-form__label">Логин</label>
+                                        <input id="inputUserLogin" type="text" class="inputLogin authorization-form__input"><br>
+                                        <label id="warningUserLogin" class="warningLogin authorization-form__warning">Предупреждение</label>
+                
+                                        <label class="authorization-form__label">Пароль</label>
+                                        <input id="inputUserPassword" type="password" class="authorization-form__input">
+                                        <a href="#" class="password-control" onclick="return showHidePassword(this, inputUserPassword);"></a>
+                                        <label id="warningUserPassword" class="authorization-form__warning">Предупреждение</label>
+
+                                        <input value="Войти" id="enterBtnUser" type="submit" 
+                                            class="authorization-form__btn" onclick="event.preventDefault()">
+                                        <label id="warningEnterBtnUser" class="authorization-form__warning btn">Предупреждение</label>
+                                        
+                                        <p class="authorization-form__hint">
+                                            У Вас ещё нет аккаунта?<br>
+                                            Создайте его прямо сейчас!
+                                        </p>
+    
+                                        <button id="btn-registration" class="authorization-form__btn additional-btn" onclick="event.preventDefault()">
+                                            Регистрация
+                                        </button>
+                                    </form>
+
+                                    <form action="" id="form-user-registration">
+
+                                        <p class="authorization-form_title">Регистрация</p>
+
+                                        <label class="authorization-form__label">Логин</label>
+                                        <input id="inputUserLoginReg" type="text" class="authorization-form__input"><br>
+                                        <label id="warningUserLoginReg" class="authorization-form__warning">Предупреждение</label>
+                
+                                        <label class="authorization-form__label">E-mail</label>
+                                        <input id="inputUserEmailReg" type="email" class="authorization-form__input"><br>
+                                        <label id="warningUserEmailReg" class="authorization-form__warning">Предупреждение</label>
+
+                                        <label class="authorization-form__label">Пароль</label>
+                                        <input id="inputUserPasswordReg" type="password" class="authorization-form__input">
+                                        <a href="#" class="password-control" onclick="return showHidePassword(this, inputUserPasswordReg);"></a>
+                                        <label id="warningUserPasswordReg" class="authorization-form__warning">Предупреждение</label>
+                                        <br>
+                                        <label class="authorization-form__label registration">Повтор<br>пароля</label>
+                                        <input id="inputUserPasswordRepeatReg" type="password" class="authorization-form__input registration">
+                                        <a href="#" class="password-control" onclick="return showHidePassword(this, inputUserPasswordRepeatReg);"></a>
+                                        <label id="warningUserPasswordRepeatReg" class="authorization-form__warning registration">Предупреждение</label>
+
+                                        <input value="Зарегистрироваться" id="enterBtnUserReg" type="submit" 
+                                            class="authorization-form__btn registration" onclick="event.preventDefault()">
+                                        <label id="warningEnterBtnUserReg" class="authorization-form__warning btn">Предупреждение</label>
+                                        
+                                        <p class="authorization-form__hint">
+                                            У Вас уже есть аккаунт?<br>
+                                            Авторизируйтесь!
+                                        </p>
+    
+                                        <button id="btn-login" class="authorization-form__btn additional-btn" onclick="event.preventDefault()">
+                                            Вход
+                                        </button>
+                                    </form>
+                                </div>
+        
+
+                                <div class="tab-content admin-login" id="tab-content__admin">
+                                    <form action="" class="authorization-form__form">
+
+                                        <p class="authorization-form_title">Вход в аккаунт</p>
+
+                                        <label class="authorization-form__label">Логин</label>
+                                        <input id="inputAdminLogin" type="text" class="authorization-form__input"><br>
+                                        <label id="warningAdminLogin" class="authorization-form__warning">Предупреждение</label>
+                
+                                        <label class="authorization-form__label">Пароль</label>
+                                        <input id="inputAdminPassword" type="password" class="inputPassword authorization-form__input">
+                                        <a href="#" class="password-control" onclick="return showHidePassword(this, inputAdminPassword);"></a>
+                                        <label id="warningAdminPassword" class="authorization-form__warning">Предупреждение</label>
+                                        <br>
+                                        <label class="authorization-form__label access-code">Код доступа</label>
+                                        <input id="inputAdminAccessCode" type="password" class="inputAccessCode authorization-form__input access-code">
+                                        <a href="#" class="password-control" onclick="return showHidePassword(this, inputAdminAccessCode);"></a>
+                                        <label id="warningAdminAccessCode" class="warningAccessCode authorization-form__warning access-code">Предупреждение</label>
+
+                                        <input value="Войти" id="enterBtnAdmin" type="submit" 
+                                            class="authorization-form__btn" onclick="event.preventDefault()">
+                                        <label id="warningEnterBtnAdmin" class="authorization-form__warning btn">Предупреждение</label>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+        </main>
+
+
+
+
+        <footer>
+            <div class="footer-section s1">
+                <a href="index.html" class="footer-title">Иггдрасиль</a>
+            </div>
+            <a href="index.html" class="footer-section s2">
+                <img class="footer-image" src="img/Yggdrasil.png">
+            </a>
+            <div class="footer-section s3">
+                <div class="footer-section s3 links">
+                    <p class="p2">Электронный адрес:<br>yggdrasil-souvenirs@gmail.com</p>
+                    <p class="p1">Телефон: 8 988 000 88 88</p>
+                </div>    
+            </div>  
+
+        </footer>
+
+
+        <script src="script.js"></script>
+        <script src="script-authorization.js"></script>
+    </body>
+
+</html>

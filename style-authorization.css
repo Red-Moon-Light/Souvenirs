@@ -1,0 +1,322 @@
+@import url(style.css);
+
+
+
+.header-container.shortened {
+    position: relative;
+    top: calc(-1 * (var(--header-container-height) - var(--header-height)));
+    margin-bottom: calc(-1 * (var(--header-container-height) - var(--header-height)));
+}
+
+.block-space.authorization {
+    position: relative;
+    margin-top: calc(var(--header-height) );
+}
+
+
+
+
+
+
+.authorization-block__wrapper {
+    position: relative;
+    width: 100vw;
+    min-height: fit-content;
+    background-color: rgba(0, 0, 0, 0.3);
+    background: url("img/authorization-block_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 4px solid rgba(29, 160, 25, 0.8);
+    border-left: 0;
+    border-right: 0;
+    z-index: 8;
+
+    margin: auto;
+    margin-bottom: -50px;
+    margin-top: -370px;
+}
+
+
+.authorization-block__shadow {
+
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    border-radius: inherit;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 9;
+
+}
+
+.authorization-block__padding {
+    padding: 7vh 50px 7vh 50px;
+}
+
+.authorization-block__container {
+    background-color: rgba(95, 40, 18, 0.8);
+    width: fit-content;
+    margin: auto;
+    padding: 3.5vw;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    z-index: 10;
+
+    animation: 1s arrive-on-bottom ease;
+}
+
+
+.authorization-block__label {
+    display: inline-block;
+    border-bottom: 3px solid;
+    border-color: rgba(255, 255, 255, 1);
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    font-size: 24px;
+    padding: 20px;
+    width: 35%;
+    min-width: fit-content;
+    text-align: center;
+    margin-right: -8px;
+    transition: all 0.3 ease;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.authorization-block__input {
+    display: none;
+}
+
+.authorization-block__input:checked + label {
+    transition: all 0.3 ease;
+    color: black;
+    text-shadow: none;
+    background-color: rgba(255, 255, 255, 1);
+    border-color: rgba(0, 0, 0, 0);
+
+
+    
+}
+
+
+.tab-content {
+    display: none;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tab-content.admin-login {
+    margin-bottom: 30px;
+}
+
+  /* отображаем только тот контент, который соответствует отмеченной радоикнопке */
+  #tab-btn__user:checked~#tab-content__user,
+  #tab-btn__admin:checked~#tab-content__admin {
+    display: block;
+  }
+
+#form-user-login {
+    display: block;
+}
+#form-user-registration {
+    display: none;
+}
+
+.authorization-form_title {
+    display: block;
+    position: relative;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.authorization-form__label {
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    line-height: 46px;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    background: linear-gradient(125deg, rgba(139, 226, 58, 0.65) 20%, rgb(126, 206, 110) 65%);
+    /* border: 2px solid rgba(199, 104, 15, 0.6); */
+    /* border-right: none; */
+    border-radius: 20px;
+    width: 100px;
+    max-width: 17vw;
+    text-align: center;
+    z-index: 18;
+    left: 11px;
+    margin-top: 20px;
+}
+
+.authorization-form__label:hover {
+    background: linear-gradient(125deg, rgba(58, 226, 66, 0.65) 20%, rgb(132, 206, 110) 65%);
+}
+
+.authorization-form__label.access-code {
+    width: 200px;
+    max-width: 30vw;
+}
+
+.authorization-form__label.registration{
+    font-size: 22px;
+    line-height: 23px;
+}
+
+
+.authorization-form__input {
+    display: inline-block;
+    position: relative;
+    border: none;
+    outline: 2px solid rgba(59, 167, 16, 0.8);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    top: -4px;
+    left: -11px;
+    z-index: 14;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    width: 270px;
+    max-width: 30vw;
+    padding-left: 30px;
+}
+
+.authorization-form__input.access-code {
+    width: 170px;
+    max-width: 17vw;
+}
+
+.authorization-form__input.registration {
+    top: -13px;
+}
+
+.password-control {
+    position: absolute;
+	margin-top: 32px;
+	margin-left: -46px;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+    font-size: 40px;
+	background: url("svg/view.svg") 0 0 no-repeat;
+    z-index: 15;
+    opacity: 0.8;
+}
+.password-control.view {
+	background: url("svg/no-view.svg") 0 0 no-repeat;
+    z-index: 15;
+}
+
+
+
+
+.authorization-form__warning {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    display: none;
+    /* display: block; */
+    margin-left: 110px;
+    margin-top: -2px;
+    width: 250px;
+    max-width: 30vw;
+    color: white;
+    background-color: rgb(224, 113, 22);
+    /* outline: 2px solid rgb(136, 66, 9); */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    z-index: 19;
+    font-size: 16px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.authorization-form__warning.registration {
+    margin-top: -11px;
+}
+
+.authorization-form__warning.btn {
+    position: absolute;
+    /* display: block; */
+    text-align: center;
+    width: 330px;
+    max-width: 37vw;
+    border-radius: 10px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 6px;
+}
+
+
+.authorization-form__btn {
+    display: block;
+    position: relative;
+    margin: auto;
+    font-size: 28px;
+    line-height: 42px;
+    width: 60%;
+    min-width: 180px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 30px;
+    transition: all 0.4s ease;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0);
+}
+
+.authorization-form__btn:hover {
+    background-color: rgba(114, 241, 82, 0.8);
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    transition: all 0.4s ease;
+    transform: scale(1.1);
+}
+
+.authorization-form__btn.registration {
+    font-size: 22px;
+}
+
+.authorization-form__hint {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    position: relative;
+    width: 60%;
+    min-width: 220px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    margin-top: 55px;
+    font-size: 16px;
+}
+
+.authorization-form__hint:hover {
+    z-index: 17;
+}
+
+.authorization-form__btn.additional-btn {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    font-size: 26px;
+    line-height: 40px;
+    background-color: rgba(114, 241, 82, 0.6);
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    outline: 2px solid rgba(68, 24, 6, 0.5);
+    transition: all 0.4s ease;
+}
+
+.authorization-form__btn.additional-btn:hover {
+    background-color: rgba(114, 241, 82, 0.8);
+    transition: all 0.4s ease;
+    outline-color: rgba(0, 0, 0, 0);
+    z-index: 18;
+    transform: scale(1.1);
+}
+
+
